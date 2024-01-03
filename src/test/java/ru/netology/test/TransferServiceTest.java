@@ -17,11 +17,6 @@ public class TransferServiceTest {
         open("http://localhost:9999");
     }
 
-    @AfterEach
-    void tearDown() {
-        closeWindow();
-    }
-
     @Test
     void shouldTransferFromFirstCardToSecondCard() {
         var LoginPage = new LoginPage();
